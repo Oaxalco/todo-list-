@@ -15,3 +15,16 @@ const getTodos= ()=>{
         })
     })
 }
+form.addEventListener("submit",event =>{
+    event.preventDefault();
+    API.put("todos", {
+        title: title.value, category: category.value
+    }).then(data =>{
+        console.log(data);
+        if(!data.error){
+            getTodos()
+        }
+    }).finally(()=>{
+        btn.removeAttribute("disabled")
+    })
+})
