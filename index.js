@@ -5,7 +5,7 @@ const title = document.querySelector("#todo-title");
 const category= document.querySelector("#todo-category");
 const btn= document.querySelector("#button-add")
 const list =  document.querySelector("todo-list")
-const API = new FetchWrapper("")
+const API = new FetchWrapper("https://api.learnjavascript.online/demo/")
 
 const getTodos= ()=>{
     API.get("todos").then(data =>{
