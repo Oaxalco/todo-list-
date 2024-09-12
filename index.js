@@ -1,30 +1,12 @@
-import FetchWrapper from "./fetch-wrapper.js"
+const todoInput = document.querySelector("#todo-input");
+const todoList = document.querySelector("#todos-list");
 
-const form = document.querySelector("#todo-form");
-const title = document.querySelector("#todo-title");
-const category= document.querySelector("#todo-category");
-const btn= document.querySelector("#button-add")
-const list =  document.querySelector("todo-list")
-const API = new FetchWrapper("https://api.learnjavascript.online/demo/")
-
-const getTodos= ()=>{
-    API.get("todos").then(data =>{
-        list.innerHTML= "";
-        data.todos.forEach(todo =>{
-            list .insertAdjacentHTML("beforeend", `<li><div class="card>[${todo.category}]${todo.title}</div></li>`)
-        })
-    })
+function addTodo(){
+    const todoText = todoInput.value.trim();
+    if (todoText !== ''){
+        const li= document.createElement('li');
+        li.textContent= todoText;
+        todoList.appendChild(li);
+        todoInput.value= ''
+    }
 }
-form.addEventListener("submit",event =>{
-    event.preventDefault();
-    API.put("todos", {
-        title: title.value, category: category.value
-    }).then(data =>{
-        console.log(data);
-        if(!data.error){
-            getTodos()
-        }
-    }).finally(()=>{
-        btn.removeAttribute("disabled")
-    })
-})
