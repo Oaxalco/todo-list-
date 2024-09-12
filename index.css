@@ -24,13 +24,11 @@
 body{
     margin: 0;
     background-color: var(--neutral-5);
-    text-align: center;
 }
 
 .container{
     width: 400px;
     margin: 0;
-    border: 1px solid var(--neutral-3);
 }
 
 h1{
