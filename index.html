@@ -17,10 +17,9 @@
       </ul>
     </nav>
     <div class="container" id="main">
-        <p>Add a to do</p>
+        <h1>Add a to do</h1>
         <form for="todo-form">
-            <label for="todo-title">To do</label>
-            <input type="text" id="todo-title" placeholder="Enter your to do">
+            <input type="text" id="todo-input" placeholder="Enter your to do">
             <div>
                 <label for="todo-category">Category</label>
                 <select id="todo-category">
@@ -28,7 +27,7 @@
                     <option value="personal">Personal</option>
                 </select>
             </div>
-            <input type="submit" id="button-add" value="Add" class="btn btn-outline">
+            <button onclick="addTask()">Add</button>
         </form>
         <hr />
         <h3>To do's</h3>
