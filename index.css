@@ -36,6 +36,18 @@ h1{
     font-weight: 400;
 }
 
+input{
+    font-size: 16px;
+    margin-bottom: 1.7em;
+    padding: 0.75em 0.5em;
+    background-color: var(--neutral-5);
+    width: 100%;
+    max-width: 250px;
+    border: none;
+    border-radius:8px;
+    border-left: 7px solid var(--neutral-4);
+}
+
 a{
     color: var(--primary-2);
     text-decoration: underline;
@@ -44,7 +56,7 @@ a{
 }
 
 button{
-    border-radius: 3px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
@@ -55,7 +67,6 @@ button{
     text-align: center;
     display: inline-block;
     transition: background-color 200ms, transform 220ms;
-    border: none;
 }
 
 h3{
