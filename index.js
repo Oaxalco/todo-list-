@@ -9,6 +9,12 @@ function addTodo(){
         todoList.appendChild(li);
         todoInput.value= ''
     }
+li.addEventListener('click', completeTask)
 }
 
 addTodo();
+
+function completeTask(event){
+    const task= event.target;
+    task.classList.toggle('completed');
+}
