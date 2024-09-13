@@ -43,7 +43,7 @@ input{
     background-color: var(--neutral-5);
     width: 100%;
     max-width: 250px;
-    border: none;
+    border: solid;
     border-radius:8px;
     border-left: 7px solid var(--neutral-4);
 }
@@ -67,6 +67,18 @@ button{
     text-align: center;
     display: inline-block;
     transition: background-color 200ms, transform 220ms;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+select{
+  padding: 10px 15px;
+  margin-top: 5px;
+  border-radius: 8px;  
 }
 
 h3{
