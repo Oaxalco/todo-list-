@@ -10,3 +10,5 @@ function addTodo(){
         todoInput.value= ''
     }
 }
+
+addTodo();
