@@ -9,12 +9,20 @@ function addTodo(){
         todoList.appendChild(li);
         todoInput.value= ''
     }
-li.addEventListener('click', completeTask)
-}
+ li.addEventListener('click', completeTask)
 
-addTodo();
+ const deleteBtn= document.createElement('button');
+ deleteBtn.textContent= 'Delete';
+ deleteBtn.addEventListener('click', deleteTask);
+ li.appendChild(deleteBtn)
+}
 
 function completeTask(event){
     const task= event.target;
     task.classList.toggle('completed');
+}
+
+function deleteTask(event){
+    const task = event.target.parentElement;
+    taskList.removeChild(task);
 }
