@@ -1,7 +1,7 @@
 const todoInput = document.querySelector("#todo-input");
 const todoList = document.querySelector("#todos-list");
 
-function addTodo(){
+function addTask(){
     const todoText = todoInput.value.trim();
     if (todoText !== ''){
         const li= document.createElement('li');
