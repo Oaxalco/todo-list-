@@ -1,13 +1,13 @@
-const todoInput = document.querySelector("#todo-input");
+const taskInput = document.querySelector("#todo-input");
 const taskList = document.querySelector("#todos-list");
 
 function addTask(){
-    const todoText = todoInput.value.trim();
+    const todoText = taskInput.value.trim();
     if (todoText !== ''){
         const li= document.createElement('li');
         li.textContent= todoText;
         taskList.appendChild(li);
-        todoInput.value= ''
+        taskInput.value= ''
     }
  li.addEventListener('click', completeTask)
 
