@@ -97,8 +97,18 @@ li{
     justify-content: center;
 }
 
-text{
+#text{
     justify-content: center;
+}
+
+.completed-button{
+    border-radius:8px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 10px 10px 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-3);
 }
 
 
