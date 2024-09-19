@@ -196,6 +196,7 @@ li{
 
 .footer{
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .footer-items{
