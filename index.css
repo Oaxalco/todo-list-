@@ -157,6 +157,7 @@ button{
     display: inline-block;
     transition: background-color 200ms, transform 220ms;
     background-color: var(--accent-1);
+    color: white;
 }
 
 button:hover{
