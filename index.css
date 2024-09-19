@@ -185,14 +185,6 @@ li{
     justify-content: center;
 }
 
-.todo-item {
-  border:solid var(--black); 
-  padding-bottom: 10px;
-  margin: 5px 0;
-  border-radius: 20px; 
-  width: fit-content;
-  height: fit-content;
-}
 
 .footer{
   justify-content: space-between;
@@ -202,16 +194,20 @@ li{
 .footer-item{
   color: var(--primary-1);
   text-decoration: none;
+  justify-content: space-between;
 }
 
-.completed-button{
-    border-radius:8px;
+.completed{
+    border-radius:20px;
     font-size: 14px;
     font-weight: 400;
     margin: 20px 10px 10px 20px;
     justify-content: center;
     text-align: center;
-    background-color: var(--primary-3);
+    border: solid var(--black);
+    padding-bottom: 10px;
+    width: 400px;
+    height: 60px;
   }
   
   
