@@ -61,6 +61,7 @@ body{
   display: block;
   text-align: center;
   padding: 13px 20px;
+  cursor: pointer;
 }
 
 .nav-item:hover a {
@@ -118,13 +119,6 @@ input{
     border-left: 7px solid var(--neutral-4);
 }
 
-a{
-    color: var(--primary-2);
-    text-decoration: none;
-    line-height: 1.4;
-    padding: 0.25em;
-}
-
 .btn{
   border-radius: 8px;
     cursor: pointer;
@@ -138,6 +132,7 @@ a{
     display: inline-block;
     transition: background-color 200ms, transform 220ms;
     background-color: var(--primary-5);
+    color: var(--black);
 }
 
 .btn:hover{
@@ -157,7 +152,7 @@ button{
     display: inline-block;
     transition: background-color 200ms, transform 220ms;
     background-color: var(--accent-1);
-    color: white;
+    color: var(--white);
     border: white;
     
 }
@@ -189,9 +184,14 @@ li{
     justify-content: center;
 }
 
-#text{
-    justify-content: center;
-}
+.todo-item {
+  border:solid var(--black); 
+  padding-bottom: 10px;
+  margin: 5px 0;
+  border-radius: 20px; 
+  width: fit-content;
+  height: fit-content;
+  }
 
 .completed-button{
     border-radius:8px;
