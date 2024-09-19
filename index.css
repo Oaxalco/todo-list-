@@ -14,8 +14,8 @@
   --neutral-4: #d9cfd3;
   --neutral-5: #f2ecee;
 
-  --accent-1: #458179;
-  --accent-2: #4da296;
+  --accent-1: #0375b7;
+  --accent-2: #00a6ff;
   --accent-3: #8dd8cf;
   --accent-4: #92cfc7;
   --accent-5: #d7f2ef;
@@ -125,8 +125,8 @@ a{
     padding: 0.25em;
 }
 
-button{
-    border-radius: 8px;
+.btn{
+  border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
@@ -140,8 +140,27 @@ button{
     background-color: var(--primary-5);
 }
 
-button:hover{
+.btn:hover{
     background-color: var(--primary-3);
+}
+
+button{
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 10px 10px 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+    max-width: 120px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 200ms, transform 220ms;
+    background-color: var(--accent-1);
+}
+
+button:hover{
+  background-color: var(--accent-2);
 }
 
 label{
