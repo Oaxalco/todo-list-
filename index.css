@@ -187,14 +187,15 @@ li{
 
 
 .footer{
-  justify-content: space-between;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .footer-item{
   color: var(--primary-1);
   text-decoration: none;
-  justify-content: space-between;
 }
 
 .completed{
