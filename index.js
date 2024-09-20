@@ -8,7 +8,7 @@ function addTask() {
     
     if (todoText !== '') {
         const li = document.createElement('li'); 
-        li.classList.add('todo-item')
+        li.classList.add('todo-item');
         li.textContent = `[${todoCategory}] ${todoText}`; 
 
         const deleteBtn = document.createElement('button');
