@@ -9,7 +9,7 @@
   --primary-5: #c1d3f7;
 
   --neutral-1: #2c2c2c;
-  --neutral-2: #434343;
+  --neutral-2: #4b4b4b;
   --neutral-3: #94868b;
   --neutral-4: #d9cfd3;
   --neutral-5: #f2ecee;
@@ -189,6 +189,13 @@ li{
     display: block;
     border: solid var(--black);
     border-radius: 20px;
+    margin: 20px 10px 10px 20px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 
@@ -205,13 +212,8 @@ li{
 }
 
 .completed{
-    font-size: 17px;
-    font-weight: 400;
-    margin: 20px 10px 10px 20px;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 10px;
-    height: 60px;
+    text-decoration: line-through;
+    color: var(--neutral-2);
   }
   
   
