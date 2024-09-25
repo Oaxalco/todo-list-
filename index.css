@@ -183,6 +183,9 @@ ul{
 li{
     margin:10px;
     justify-content: center;
+}
+
+.todo-item{
     display: block;
     border: solid var(--black);
     border-radius: 20px;
