@@ -19,6 +19,7 @@ function addTask() {
         taskList.appendChild(li);
         taskInput.value = '';
 
+        // Add event listener to toggle completion when task is clicked
         li.addEventListener('click', completeTask);
 
         saveTaskstoLocalStorage(); 
@@ -26,12 +27,13 @@ function addTask() {
 }
 
 function completeTask(event) {
-    const task = event.target;
-    task.classList.toggle('completed');
-    saveTaskstoLocalStorage();
+    const task = event.currentTarget; 
+    task.classList.toggle('completed'); 
+    saveTaskstoLocalStorage(); 
 }
 
 function deleteTask(event) {
+    event.stopPropagation(); 
     const task = event.target.parentElement;
     taskList.removeChild(task);
     saveTaskstoLocalStorage();
@@ -44,7 +46,6 @@ function saveTaskstoLocalStorage() {
     for (let i = 0; i < taskItems.length; i++) {
         const taskText = taskItems[i].childNodes[0].nodeValue;  
         const isCompleted = taskItems[i].classList.contains('completed');
-        
         
         const category = taskText.match(/\[(.*?)\]/)[1];
         const text = taskText.replace(/\[.*?\]\s*/, ''); 
@@ -59,6 +60,7 @@ function loadTasksFromLocalStorage() {
     if (tasks) {
         tasks.forEach(task => {
             const li = document.createElement('li');
+            li.classList.add('todo-item');
             li.textContent = `[${task.category}] ${task.text}`; 
 
             if (task.completed) {
@@ -71,6 +73,7 @@ function loadTasksFromLocalStorage() {
 
             li.appendChild(deleteBtn);
             taskList.appendChild(li);
+            
             li.addEventListener('click', completeTask);
         });
     }
