@@ -16,10 +16,10 @@ function addTask() {
         deleteBtn.addEventListener('click', deleteTask);
         
         li.appendChild(deleteBtn);
-        taskList.appendChild(li);
+
+        taskList.prepend(li);
         taskInput.value = '';
 
-        // Add event listener to toggle completion when task is clicked
         li.addEventListener('click', completeTask);
 
         saveTaskstoLocalStorage(); 
