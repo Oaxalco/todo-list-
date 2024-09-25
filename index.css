@@ -183,6 +183,9 @@ ul{
 li{
     margin:10px;
     justify-content: center;
+    display: block;
+    border: solid var(--black);
+    border-radius: 20px;
 }
 
 
@@ -199,13 +202,11 @@ li{
 }
 
 .completed{
-    border-radius:20px;
     font-size: 17px;
     font-weight: 400;
     margin: 20px 10px 10px 20px;
     justify-content: center;
     text-align: center;
-    border: solid var(--black);
     padding-bottom: 10px;
     height: 60px;
   }
